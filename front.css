@@ -1,0 +1,530 @@
+body {
+ background-image: linear-gradient(to right, rgb(15, 15, 15), rgb(22, 22, 22));
+ transition: all 0.5s;
+  background-size: cover;    
+  height: 100%;  
+  background-position: fixed;
+  flex-direction: column;
+   margin: 0;    
+  display: flex;
+  background-origin: inherit;
+}
+
+
+@keyframes  fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+
+
+@font-face {
+  font-family: "é";
+  src: url("fonts/MaPolice") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("fonts/Raleway-Bold") format("truetype");
+}
+
+
+
+nav {
+    position: absolute;
+    padding: 2px 10px;
+    border-radius: 8px;
+    z-index: 9999;
+    right: 1380px;
+    font: size 20px;
+    bottom: 879px;
+} 
+.nav-list {
+  
+    list-style: none;
+    animation: fadein 2s;
+    display: flex;
+    gap: 90px;
+    z-index: 9999;
+    overflow: auto;
+    margin: 10;
+    padding: 0;
+    
+}
+
+.nav-item a {
+    position: fixed;
+    margin-left: -200px;
+    margin-top: -16px;
+    display: block;   /* pour qu’ils prennent une “ligne” chacun */
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: rgb(163, 163, 163);
+    animation: fadein 0s;
+    font-weight: bold;
+    gap: 10px; 
+    z-index: 999;
+    overflow: auto;
+    font-family: "Bree Serif", sans-serif;
+    transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  overflow: auto;
+    color: #c71111;
+     text-shadow: 0 0 5px #c71111,
+               0 0 10px #c71111,
+               0 0 20px #c71111,
+               0 0 40px #ff1a1a;
+     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+
+.nav-frame {
+  position: fixed;
+  background-color: rgb(24, 24, 24);
+  border-color: white;
+ outline: 2px solid #ebebeb1c; 
+    outline-offset: 2px;
+  padding: 37px 1368px;
+  right: 0px;
+  bottom: 880px;
+}
+
+
+
+.log-btn {
+  position: fixed;
+  background-color: rgba(216, 12, 12, 0.623);
+  transition: all 0.4s;
+  color: white;
+  animation: fadein 1s;
+  padding: 7px 12px;
+  font-family: "Bree Serif", sans-serif;
+  border-radius: 4px;
+  right: 195px;
+  bottom: 890px;
+
+}
+
+
+.log-btn:active {
+ transform: scale(0.8);
+   transform: scale(1.2);
+  
+}
+
+.sign-btn {
+  position: fixed;
+  transition: all 0.4s;
+  color: white;
+  font-family: "Bree Serif", sans-serif;
+  animation: fadein 1s;
+  border-color: white;
+ outline: 1px solid #ebebeb83; 
+    outline-offset: 2px;
+  padding: 7px 12px;
+  border-radius: 4px;
+  right: 80px;
+  bottom: 890px;
+
+}
+
+
+.log-btn:hover {
+  background-color: rgb(122, 1, 1);
+ outline: 1px solid #b4b4b4d0; 
+  border-color: rgb(0, 5, 32);
+  box-shadow: rgba(0, 0, 0, 0.17)  0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-color: rgb(100, 100, 100);
+    
+  color: #8d8d8d;
+  transition: all 0.4s;
+}
+
+
+.sign-btn:hover {
+  color: rgb(136, 136, 136);
+  outline: 2px solid #b4b4b4d0; 
+   box-shadow: rgba(0, 0, 0, 0.17)  0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  
+  transition: all 0.1s;
+}
+
+
+.sign-btn:active {
+  transform: scale(0.8);
+   transform: scale(1.2);
+}
+
+
+
+.card1 {
+  position: absolute;
+  background-color: #242424d0;
+  animation: fadein 1s;
+  animation-timeline: view();
+  padding: 147px 198px;
+  transition: all 0.4s;
+  border-radius: 5px;
+  right: 1180px;
+}
+
+.card2 {
+  position: absolute;
+  background-color: #242424d0;
+  padding: 147px 198px;
+  transition: all 0.4s;
+  border-radius: 5px;
+  right: 750px;
+}
+
+
+.card3 {
+  position: absolute;
+  background-color: #242424d0;
+  padding: 147px 198px;
+  transition: all 0.4s;
+  border-radius: 5px;
+  right: 320px;
+}
+
+.card4 {
+  position: absolute;
+  background-color: #242424d0;
+  padding: 147px 198px;
+  transition: all 0.4s;
+  border-radius: 5px;
+  right: 1180px;
+  bottom: -850px;
+}
+
+.card5 {
+  position: absolute;
+  background-color: #242424d0;
+  padding: 147px 198px;
+  transition: all 0.4s;
+  border-radius: 5px;
+  right: 750px;
+  bottom: -850px;
+}
+
+
+.card6 {
+  position: absolute;
+  background-color: #242424d0;
+  padding: 147px 198px;
+  transition: all 0.4s;
+  border-radius: 5px;
+  right: 320px;
+  bottom: -850px;
+}
+
+.card1:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.4s;
+   box-shadow: 
+        0 0 10px rgba(196, 194, 194, 0.7)
+  
+}
+
+.card2:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.4s;
+   box-shadow: 
+        0 0 10px rgba(196, 194, 194, 0.7)
+  
+}
+
+.card3:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.4s;
+   box-shadow: 
+        0 0 10px rgba(196, 194, 194, 0.7)
+  
+}
+
+
+.card4:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.4s;
+   box-shadow: 
+        0 0 10px rgba(196, 194, 194, 0.7)
+  
+}
+
+.card6:hover  {
+  transform: scale(1.1, 1.1);
+  box-shadow: 
+        0 0 10px rgba(196, 194, 194, 0.7)
+}
+
+.card5:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.4s;
+   box-shadow: 
+        0 0 10px rgba(196, 194, 194, 0.7)
+  
+}
+
+
+.btn {
+    position: absolute;
+  background: linear-gradient(to bottom, rgb(219, 27, 27), rgb(124, 12, 12));
+    padding: 17px 58px;
+    right: 970px;
+    border-radius: 5px;
+    background-color: #ff0000d8;
+    animation: fadein 1s;
+    bottom: 400px;
+    font-family: "Bree Serif", sans-serif;
+    transition: all 0.4s;
+    color: rgb(255, 255, 255);
+    
+}
+
+.btn-sec {
+   position: absolute;
+   
+   
+    outline-width: 3px;
+    padding: 17px 58px;
+    right: 750px;
+    border-radius: 5px;
+    outline: 2px solid #444444d0;
+    animation: fadein 1s;
+    bottom: 402px;
+    font-family: "Bree Serif", sans-serif;
+    transition: all 0.4s;
+    color: rgb(255, 255, 255);
+}
+.btn-sec:hover {
+  outline: 2px solid #818181d0;
+  transform: translateY(-5px);
+  box-shadow: 
+        0 0 10px rgba(182, 182, 182, 0.7)
+}
+
+
+.spacer {
+  height: 200px;
+}
+
+
+
+.btn-sec:active {
+  transform: scale(0.8);
+  
+}
+
+.btn:hover {
+    background-color: rgb(214, 214, 214);
+    transform: translateY(-5px);
+    transition: all 0.4s;
+     box-shadow: rgba(236, 6, 6, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+   
+    
+}
+
+
+
+
+
+.btn:active {
+  transform: scale(0.8);
+  
+}
+
+
+.title1 {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: "Bree Serif", sans-serif;
+    right: 784px;
+    bottom: 560px;
+    animation: fadein 1s;
+    
+    
+    font-weight: 400; /* 700 = bold, 900 = extra bold */
+    z-index: 100;
+    text-shadow: 1px 5px 6px rgb(87, 87, 87), -1px -1px 2px gray;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.title1:hover {
+  filter: brightness(1);
+ color: rgb(216, 216, 216);
+
+}
+
+.title2 {
+    position: absolute;
+    color: rgb(148, 148, 148);
+    font-size: 30px;
+    font-family: "Bree Serif", sans-serif;
+    right: 864px;
+    animation: bounce 1s;
+    bottom: 520px;
+    animation: fadein 1s;
+    font-weight: 400; /* 700 = bold, 900 = extra bold */
+    z-index: 100;
+    
+    
+}
+
+
+
+.front-card {
+  position: absolute;
+  background-image: url();
+  background-color: rgba(36, 36, 36, 0.363);
+  background-position: 10px;
+  
+  padding: 437px 1540px;
+  animation: fadein 1s;
+  right: -100px;
+  bottom: -900px;
+  
+  transition: all 0.3s;
+  
+}
+
+/* From Uiverse.io by satyamchaudharydev */ 
+.loader {
+  display: block;
+  --height-of-loader: 4px;
+  --loader-color: #0071e2;
+  width: 130px;
+  right: -890px;
+  bottom: 530px;
+  
+
+  height: var(--height-of-loader);
+  border-radius: 30px;
+  background-color: rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  background: var(--loader-color);
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 30px;
+  animation: moving 1s ease-in-out infinite;
+}
+
+@keyframes moving {
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+    right: 0;
+    left: unset;
+  }
+}
+
+#content {
+  display: none;
+  padding: 20px;
+}
+
+.blurred {
+  filter: blur(6px);
+}
+
+
+
+
+.btn-test {
+   position: absolute;
+   
+    background-color: #ffffff2a;
+    outline-width: 3px;
+    padding: 17px 58px;
+    right: 750px;
+    border-radius: 5px;
+    
+    animation: fadein 1s;
+    bottom: 202px;
+    
+    transition: all 0.4s;
+    
+}
+
+
+
+
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+html, body {
+  height: 330%;
+}
+
+main {
+  flex: 1; /* occupe l’espace restant entre header et footer */
+}
+
+
+
+.title-card {
+   position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: "Bree Serif", sans-serif;
+    right: 824px;
+    bottom: -130px;
+    animation: fadein 1s;
+   
+    
+    font-weight: 400; /* 700 = bold, 900 = extra bold */
+    z-index: 100;
+    text-shadow: 1px 5px 6px rgb(87, 87, 87), -1px -1px 2px gray;
+}
+
+
+.title-beside {
+   position: absolute;
+    color: rgb(146, 146, 146);
+    font-size: 20px;
+    font-family: "Bree Serif", sans-serif;
+    right: 869px;
+    bottom: -160px;
+    animation: fadein 1s;
+   
+    
+    font-weight: 400; /* 700 = bold, 900 = extra bold */
+    z-index: 100;
+    text-shadow: 1px 5px 6px rgb(87, 87, 87), -1px -1px 2px gray;
+}

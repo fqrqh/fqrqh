@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+  
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount+Ink:wght@100..900&family=Bree+Serif&family=Nata+Sans:wght@100..900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Slabo+27px&family=Sora:wght@100..800&family=VT323&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/pic/ic.png">
+    <title>Hello</title>
+    
+   
+    <link rel="stylesheet" href="front.css">
+    <link rel="stylesheet" href="load.js">
+    <link rel="stylesheet" href="test.react">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    </head>
+ <nav>
+    <ul class="nav-list">
+        <li class="nav-item"><a href="front.html">Home</a></li>
+        <li class="nav-item"><a href="#games">Games</a></li>
+        <li class="nav-item"><a href="#services">Services</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+
+<body>
+
+  
+<div id="particles-js"></div>
+
+
+
+<div  class = "title-card">i dont know</div>
+<div  class = "title-beside">i dont know really</div>
+ <div class = "btn-test">=</div>
+
+</body>
+
+
+
+
+
+<div>
+<input type = "password">
+  <div class="btn">Discover</div>
+  
+  
+
+<div class = "front-card"></div>
+<div class="title1 hidden">On all products</div>
+<div class = "title2">this is a sub</div>
+<div class = "card"></div>
+<div class="spacer"></div>
+<div class = "btn2"></div>
+<div class = "nav-frame"></div>
+<MyButton />
+ <div class="log-btn">LOG IN</div>
+<div  class = "card1"></div>
+<div  class = "card2"></div>
+<div  class = "card3"></div>
+<div  class = "card4"></div>
+<div  class = "card5"></div>
+<div  class = "card6"></div>
+<div class = "btn-sec">Check</div>
+ <div class="sign-btn">
+   SIGN IN
+    <i class="fa-solid fa-arrow-right"></i>
+
+
+
+
+
+
+   
+</div>
+</div>
+<script>
+
+
+
+particlesJS("particles-js", {"particles":{"number":{"value":30,"density":{"enable":true,"value_area":800}},"color":{"value":"#8c3535"},"shape":{"type":"circle","stroke":{"width":0,"color":"#871414"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.9,"random":false,"anim":{"enable":false,"speed":0.3,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":0.3,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#871414","opacity":0.5,"width":1},"move":{"enable":true,"speed":2,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":1},"repulse":{"distance":200,"duration":0.1},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+anime({
+  targets: 'div',
+  translateX: 150,
+  rotate: '1turn',
+  backgroundColor: '#FF0000',
+  duration: 2000
+});
+</script>
