@@ -31,7 +31,9 @@
         alt="Gojo"
         style="width:130%; max-width:430px; filter: grayscale(100%);"
       />
-      <!-- METRICS -->
+    </td>
+
+    <!-- METRICS -->
     <td width="55%" align="center" bgcolor="#000000" style="padding:24px;">
       <img
         src="./github-metrics.svg"
@@ -39,8 +41,5 @@
         style="width:80%; max-width:430px; filter: grayscale(100%);"
       />
     </td>
-    </td>
-
-    
   </tr>
 </table>
