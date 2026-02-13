@@ -16,5 +16,5 @@
 
 <!-- METRICS -->
 <p align="center">
-  <img src="./metrics.classic.svg" alt="Metrics" width="900"/>
+  <img src="./metrics.classic.svg" width="900"/>
 </p>
