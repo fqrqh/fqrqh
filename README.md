@@ -13,7 +13,7 @@
 </p>
 
 <br/>
-<img src="https://github.com/fqrqh/fqrqh/blob/main/t%C3%A9l%C3%A9chargement.png" align="right" width="400" />
+<img src="https://github.com/fqrqh/fqrqh/blob/main/t%C3%A9l%C3%A9chargement.png" align="right" width="900" />
 
 
 
