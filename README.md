@@ -7,10 +7,13 @@
 </p>
 
 <!-- BARRE NOIRE -->
+<!-- PIXEL TEXT BOX (STATIC) -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:1a1a1a&height=2&section=footer"/>
+  <img 
+    src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:000000&height=90&section=header&text=SYSTEM%20ONLINE%20%E2%96%A0%20BUILDING%20IN%20SILENCE&fontColor=FFFFFF&fontSize=20&font=Press+Start+2P&fontAlign=50&fontAlignY=55"
+    alt="Pixel Text Box"
+  />
 </p>
-
 <!-- PIXEL TEXT BOX -->
 <p align="center">
   <img 
