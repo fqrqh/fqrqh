@@ -27,4 +27,4 @@ jobs:
           plugin_habits: yes
 
           output_action: commit
-          output_path: metrics.classic.svg
+          filename: metrics.classic.svg
