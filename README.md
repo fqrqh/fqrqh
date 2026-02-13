@@ -14,20 +14,16 @@
 
 <br/>
 
-<!-- PNG À DROITE (utilise le lien RAW, pas /blob/) -->
-<!-- SECTION GOJO + METRICS (2 COLONNES) -->
 <table align="center">
   <tr>
-    <!-- Colonne gauche : image perso -->
     <td width="45%" align="center" bgcolor="#0d1117" style="padding:18px;">
       <img
-        src="LIEN_RAW_DE_TON_GOJO.png"
+        src="https://github.com/fqrqh/fqrqh/blob/main/t%C3%A9l%C3%A9chargement%20(2).png"
         alt="Gojo"
         style="width:100%; max-width:430px;"
       />
     </td>
 
-    <!-- Colonne droite : metrics -->
     <td width="55%" align="center" bgcolor="#0d1117" style="padding:18px;">
       <img
         src="./github-metrics.svg"
