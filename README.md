@@ -1,6 +1,6 @@
 <!-- BANNER -->
 <p align="center">
-  <img src="file:///C:/Users/fisou/Downloads/faded-memories%20(1).gif" alt="animated banner" width="100%"/>
+  <img src="https://gifyu.com/image/bvKKz" alt="animated banner" width="100%"/>
 </p>
 
 <br/>
