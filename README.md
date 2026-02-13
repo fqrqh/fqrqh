@@ -18,7 +18,7 @@
   <table>
     <tr>
       <td bgcolor="#0d1117" style="padding:24px; border-radius:16px;" align="center">
-        <img src="./github-metrics.svg" alt="Metrics" width="900"/>
+        <img src="./github-metrics.svg" alt="Metrics" width="450"/>
       </td>
     </tr>
   </table>
