@@ -17,34 +17,29 @@
 <br/>
 
 <!-- BACKGROUND BLOCK -->
-<!-- GOJO + METRICS (DARK BACKGROUND BLOCK) -->
-<table align="center" width="85%" bgcolor="#0a0a0a" cellpadding="28" cellspacing="0">
-  <tr>
-    <td>
-      <table align="center" width="100%" cellpadding="0" cellspacing="0">
-        <tr>
-          <!-- GOJO -->
-          <td width="45%" align="center" valign="middle">
-            <img
-              src="https://raw.githubusercontent.com/fqrqh/fqrqh/main/t%C3%A9l%C3%A9chargement%20(2).png"
-              alt="Gojo"
-              width="430"
-              style="max-width:100%; filter: grayscale(100%);"
-              <!-- METRICS -->
-          <td width="55%" align="center" valign="middle">
-            <img
-              src="./github-metrics.svg"
-              alt="Metrics"
-              width="430"
-              style="max-width:100%; filter: grayscale(100%);"
-            />
-          </td>
-        </tr>
-      </table>
-    </td>
-            />
-          </td>
+<div align="center" style="background-color:#0a0a0a; padding:40px; border-radius:12px; width:85%; margin:auto;">
 
-          
-  </tr>
-</table>
+  <table align="center" width="100%">
+    <tr>
+      <!-- GOJO -->
+      <td width="45%" align="center" style="padding:24px;">
+        <img
+          src="https://raw.githubusercontent.com/fqrqh/fqrqh/main/t%C3%A9l%C3%A9chargement%20(2).png"
+          alt="Gojo"
+          style="width:100%; max-width:430px; filter: grayscale(100%);"
+        />
+          <!-- METRICS -->
+      <td width="55%" align="center" style="padding:24px;">
+        <img
+          src="./github-metrics.svg"
+          alt="Metrics"
+          style="width:100%; max-width:430px; filter: grayscale(100%);"
+        />
+      </td>
+    </tr>
+      </td>
+
+    
+  </table>
+
+</div>
