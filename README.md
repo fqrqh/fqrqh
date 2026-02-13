@@ -11,6 +11,13 @@
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:1a1a1a&height=2&section=footer"/>
 </p>
 
+<!-- PIXEL TEXT BOX -->
+<p align="center">
+  <img 
+    src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=14&pause=1500&color=FFFFFF&center=true&vCenter=true&width=700&height=80&lines=SYSTEM+ONLINE;BUILDING+SOMETHING+DIFFERENT;STAY+CURIOUS."
+    alt="Pixel Text Box"
+  />
+</p>
 <!-- TEXTE (typing neon) -->
 <p align="center">
   <img
