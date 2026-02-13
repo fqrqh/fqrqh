@@ -3,7 +3,9 @@
   <img src="https://raw.githubusercontent.com/fqrqh/fqrqh/refs/heads/main/faded-memories%20(1).gif" alt="animated banner" width="80%"/>
 </p>
 
-<br/>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00F7FF,100:7A00FF&height=2&section=footer"/>
+</p>
 
 <!-- TEXTE -->
 <p align="center">
