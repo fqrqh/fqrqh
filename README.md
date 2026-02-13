@@ -1,6 +1,6 @@
 <!-- BANNER -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/fqrqh/fqrqh/refs/heads/main/faded-memories%20(1).gif" alt="animated banner" width="80%"/>
+  <img src="https://raw.githubusercontent.com/fqrqh/fqrqh/main/faded-memories%20(1).gif" alt="animated banner" width="80%"/>
 </p>
 
 <p align="center">
@@ -9,20 +9,19 @@
 
 <!-- TEXTE -->
 <p align="center">
-  <i>Working on cool things
+  <i>Working on cool things</i>
 </p>
 
 <br/>
-<img src="https://github.com/fqrqh/fqrqh/blob/main/t%C3%A9l%C3%A9chargement.png" align="right" width="900" />
 
+<!-- PNG À DROITE (utilise le lien RAW, pas /blob/) -->
+<img src="https://raw.githubusercontent.com/fqrqh/fqrqh/main/t%C3%A9l%C3%A9chargement.png" align="right" width="260" />
 
-
-<p align="center">
-  <table>
-    <tr>
-      <td bgcolor="#0d1117" style="padding:24px; border-radius:16px;" align="center">
-        <img src="./github-metrics.svg" alt="Metrics" width="450"/>
-      </td>
-    </tr>
-  </table>
-</p>
+<!-- METRICS DANS UNE BOX DARK -->
+<table align="center">
+  <tr>
+    <td bgcolor="#0d1117" style="padding:24px; border-radius:16px;" align="center">
+      <img src="./github-metrics.svg" alt="Metrics" width="450"/>
+    </td>
+  </tr>
+</table>
