@@ -15,9 +15,7 @@
 <br/>
 <img src="https://raw.githubusercontent.com/fqrqh/fqrqh/refs/heads/main/82111131148966fc53b51623abc32bb5.jpg" align="right" width="280" />
 
-<p align="center">
-  <img src="./github-metrics.svg" width="450"/>
-</p>
+
 
 <p align="center">
   <table>
