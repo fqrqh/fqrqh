@@ -14,4 +14,4 @@ Here you can see about all my activity (even privates !)<br>
 
 &nbsp;&nbsp;&nbsp;
 
-
+<img src="./metrics.classic.svg" alt="Metrics" width="600">
