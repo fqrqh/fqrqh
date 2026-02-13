@@ -14,7 +14,7 @@
 <!-- TEXTE (typing neon) -->
 <p align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1200&color=00FFF7&center=true&vCenter=true&width=420&lines=Working+on+cool+things..."
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1200&color=E6E6E6&center=true&vCenter=true&width=500&lines=Working+on+cool+things"
     alt="Typing SVG"
   />
 </p>
