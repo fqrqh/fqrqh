@@ -9,7 +9,7 @@
 
 <!-- TEXTE -->
 <p align="center">
-  <i>Because I'm working on some cool top-secret stuff (¬‿¬)</i>
+  <i>Working on cool things
 </p>
 
 <br/>
