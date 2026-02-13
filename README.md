@@ -26,7 +26,7 @@
       <img
         src="https://raw.githubusercontent.com/fqrqh/fqrqh/main/t%C3%A9l%C3%A9chargement%20(2).png"
         alt="Gojo"
-        style="width:100%; max-width:430px; filter: grayscale(100%);"
+        style="width:130%; max-width:430px; filter: grayscale(100%);"
       />
       <!-- METRICS -->
     <td width="55%" align="center" bgcolor="#000000" style="padding:24px;">
