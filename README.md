@@ -26,7 +26,7 @@
       <img
         src="./github-metrics.svg"
         alt="Metrics"
-        style="width:100%; max-width:560px;"
+        style="width:100%; max-width:430px;"
       />
     </td>
     </td>
