@@ -1,10 +1,14 @@
-<!-- BANNER -->
+<table width="100%" cellpadding="20" cellspacing="0" border="0">
+  <tr>
+    <td bgcolor="#0d1117" align="center">
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/fqrqh/fqrqh/main/faded-memories%20(1).gif"
        alt="animated banner"
        width="80%"
        style="filter: grayscale(100%);" />
 </p>
+
 
 <!-- TEXTE -->
 <p align="center">
@@ -43,3 +47,8 @@
   </table>
 
 </div>
+
+
+ </td>
+  </tr>
+</table>
