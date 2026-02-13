@@ -1,6 +1,6 @@
 <!-- BANNER -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/fqrqh/fqrqh/refs/heads/main/faded-memories%20(1).gif" alt="animated banner" width="100%"/>
+  <img src="https://raw.githubusercontent.com/fqrqh/fqrqh/refs/heads/main/faded-memories%20(1).gif" alt="animated banner" width="80%"/>
 </p>
 
 <br/>
