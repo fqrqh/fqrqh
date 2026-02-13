@@ -6,19 +6,22 @@
        style="filter: grayscale(100%);" />
 </p>
 
-<!-- BARRE NOIRE SIMPLE -->
+<!-- BARRE NOIRE -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:1a1a1a&height=2&section=footer"/>
 </p>
 
-<!-- TEXTE -->
-<p align="center" style="color:white;">
-  <i>Working on cool things</i>
+<!-- TEXTE (typing neon) -->
+<p align="center">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1200&color=00FFF7&center=true&vCenter=true&width=420&lines=Working+on+cool+things..."
+    alt="Typing SVG"
+  />
 </p>
 
 <br/>
 
-<!-- SECTION GOJO + METRICS -->
+<!-- GOJO + METRICS -->
 <table align="center">
   <tr>
     <!-- GOJO -->
