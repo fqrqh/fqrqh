@@ -22,14 +22,15 @@
         alt="Gojo"
         style="width:100%; max-width:430px;"
       />
-    </td>
-
-    <td width="55%" align="center" bgcolor="#0d1117" style="padding:18px;">
+      <td width="55%" align="center" bgcolor="#0d1117" style="padding:18px;">
       <img
         src="./github-metrics.svg"
         alt="Metrics"
         style="width:100%; max-width:560px;"
       />
     </td>
+    </td>
+
+    
   </tr>
 </table>
