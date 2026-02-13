@@ -6,18 +6,11 @@
        style="filter: grayscale(100%);" />
 </p>
 
-<!-- BARRE NOIRE -->
-<!-- PIXEL TEXT BOX (STATIC) -->
-<p align="center">
-  <img 
-    src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:000000&height=90&section=header&text=SYSTEM%20ONLINE%20%E2%96%A0%20BUILDING%20IN%20SILENCE&fontColor=FFFFFF&fontSize=20&font=Press+Start+2P&fontAlign=50&fontAlignY=55"
-    alt="Pixel Text Box"
-  />
-</p>
+
 <!-- PIXEL TEXT BOX -->
 <p align="center">
   <img 
-    src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=14&pause=1500&color=FFFFFF&center=true&vCenter=true&width=700&height=80&lines=SYSTEM+ONLINE;BUILDING+SOMETHING+DIFFERENT;STAY+CURIOUS."
+    src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:000000&height=80&section=header&text=SYSTEM%20ONLINE%20%E2%96%A0%20BUILDING%20SOMETHING%20DIFFERENT%20%E2%96%A0%20STAY%20CURIOUS.&fontColor=FFFFFF&fontSize=18&font=Press+Start+2P&fontAlign=50&fontAlignY=55"
     alt="Pixel Text Box"
   />
 </p>
