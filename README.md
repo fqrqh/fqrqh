@@ -15,13 +15,15 @@
 <br/>
 
 <!-- PNG À DROITE (utilise le lien RAW, pas /blob/) -->
-<img src="https://raw.githubusercontent.com/fqrqh/fqrqh/main/t%C3%A9l%C3%A9chargement.png" align="right" width="260" />
-
-<!-- METRICS DANS UNE BOX DARK -->
 <table align="center">
   <tr>
-    <td bgcolor="#0d1117" style="padding:24px; border-radius:16px;" align="center">
-      <img src="./github-metrics.svg" alt="Metrics" width="450"/>
+    <td bgcolor="#0d1117" align="center">
+      <img src="./github-metrics.svg" width="450"/>
     </td>
   </tr>
 </table>
+
+<img src="https://raw.githubusercontent.com/fqrqh/fqrqh/main/t%C3%A9l%C3%A9chargement.png"
+     align="right"
+     width="260"
+     style="margin-top:-420px;" />
