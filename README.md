@@ -11,12 +11,7 @@
   </p>
 
   <!-- TEXTE -->
-  <p align="center">
-    <img
-      src="https://readme-typing-svg.demolab.com?font=VT323&size=28&pause=1200&color=E6E6E6&center=true&vCenter=true&width=500&cursor=true&cursorColor=FFFFFF&lines=Working+on+cool+things+sometimes"
-      alt="Typing SVG"
-    />
-  </p>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=VT323&size=19&pause=1000&color=FFFFFF&width=435&lines=Working+on+cool+thing+sometimes;How+vexingly+quick+daft+zebras+jump" alt="Typing SVG" /></a>
 
   <!-- BADGES -->
   <p align="center">
