@@ -53,9 +53,7 @@ I am a Student currently in a **CyberSecurity** HighSchool located in `France`, 
 
 Over time, I have developed **solid experience** across the **Game Development**, with a strong passion for `Indie Games And Coding`, where **logic meets creativity and visual design**. Alongside web technologies, I have expanded my skills into some **Languages**, focusing on coding modern system for games using `Unreal Engine "BLUEPRINTS", Unity "C#"` and `Roblox Studio`, I commonly use a rich text editor such as `Visual Studio Code` > [!WARNING]
 > `You can check out my portfolio on my discord!!!`
-
- At the moment, I am working as a **freelancer**, developing **complete systems** for a video game im working on, from **planning and coding interface design** to **implementation and delivery**. This hands-on experience has strengthened my **problem-solving skills**, **technical versatility**, and ability to
-         understand **business needs**, while constantly pushing me to grow as a **developer and professional**.   
+ At the moment, I am working as a **freelancer**, developing **complete systems** for a video game im working on, from **planning and coding interface design** to **implementation and delivery**. This hands-on experience has strengthened my **problem-solving skills**, **technical versatility**, and ability to understand **business needs**, while constantly pushing me to grow as a **developer and professional**.   
 
 </div>
 
