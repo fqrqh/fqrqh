@@ -9,7 +9,7 @@
 
 <!-- Banner  -->
 <a href="https://github.com/fqrqh">
-  <img src="assets/images/faded-memories (1).gif" alt="Banner" style="width:100%; height:auto"/>
+  <img src="https://github.com/fqrqh/fqrqh/blob/main/faded-memories%20(1).gif" alt="Banner" style="width:100%; height:auto"/>
 </a>
 
 <div align="center">
