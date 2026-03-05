@@ -9,7 +9,7 @@
 
 <!-- Banner  -->
 <a href="https://github.com/fqrqh">
-  <img src="https://github.com/fqrqh/fqrqh/blob/main/faded-memories%20(1).gif" alt="Banner" style="width:100%; height:auto"/>
+  <img src="f" alt="Banner" style="width:100%; height:auto"/>
 </a>
 
 <div align="center">
@@ -43,17 +43,17 @@
 <img src="https://media.tenor.com/36y7ERdf9rsAAAAj/persona-5.gif" width=390 align="left">
 <div align="center">
 
-**Who Am I?**
+**Who is He??**
 
 </div>
 
 <div align="justify">
 
-I am a graduated **Software Developer** with a degree in `Systems Analysis and Development`, currently working as a **freelancer** while actively seeking an opportunity in the **technology field**. My professional journey is driven by **continuous learning**, **practical experience**, and a strong commitment to delivering **complete and functional systems** for real-world needs.
+I am a Student currently in a **CyberSecurity** HighSchool located in `France`, currently working as a **freelancer** and **Indie developer**, My professional journey is driven by **continuous learning** On my free time.
 
-Over time, I have developed **solid experience** across the **web development ecosystem**, with a strong passion for `Front-End Development`, where **logic meets creativity and visual design**. Alongside web technologies, I have expanded my skills into **mobile development**, focusing on building modern applications using `Android Studio` and `React Native`.
+Over time, I have developed **solid experience** across the **Game Development**, with a strong passion for `Indie Games And Coding`, where **logic meets creativity and visual design**. Alongside web technologies, I have expanded my skills into some **Languages**, focusing on coding modern system for games using `Unreal Engine "BLUEPRINTS", Unity "C#"` and `Roblox Studio`, I commonly use a rich text editor such as `Visual Studio Code` > ⚠️ ** Portfolio :** You can get a look to my projects on my discord!.
 
-At the moment, I am working as a **freelancer**, developing **complete systems** for companies in my city, from **planning and interface design** to **implementation and delivery**. This hands-on experience has strengthened my **problem-solving skills**, **technical versatility**, and ability to understand **business needs**, while constantly pushing me to grow as a **developer and professional**.
+At the moment, I am working as a **freelancer**, developing **complete systems** for a video game im working on, from **planning and coding interface design** to **implementation and delivery**. This hands-on experience has strengthened my **problem-solving skills**, **technical versatility**, and ability to understand **business needs**, while constantly pushing me to grow as a **developer and professional**.
 
 </div>
 
