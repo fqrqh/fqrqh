@@ -63,7 +63,7 @@ At the moment, I am working as a **freelancer**, developing **complete systems**
 
 <div align="justify">
 
-I've been manipulating `luau` since 2023 now , making project and improving my code skills here a code i made yesterday 
+I've been manipulating `luau` since 2023 now , making project and improving my code skills here a lil sneakpeek so you can imagine my level in lua '' to see my other portfolio you can come on `Twitter` "Fqrqhhh" or `Discord` "fqrqhhh"
 
 ```lua
 local uis = game:GetService("UserInputService")
