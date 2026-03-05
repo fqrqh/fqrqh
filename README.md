@@ -55,7 +55,7 @@ Over time, I have developed **solid experience** across the **Game Development**
 > `You can check out my portfolio on my discord!!!`
 
  At the moment, I am working as a **freelancer**, developing **complete systems** for a video game im working on, from **planning and coding interface design** to **implementation and delivery**. This hands-on experience has strengthened my **problem-solving skills**, **technical versatility**, and ability to
-understand **business needs**, while constantly pushing me to grow as a **developer and professional**.
+         understand **business needs**, while constantly pushing me to grow as a **developer and professional**.   
 
 </div>
 
