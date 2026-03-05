@@ -4,12 +4,12 @@
     and I’m glad you liked it! I just kindly ask for one thing:
 
     Please, leave a star on my README it would truly make my day :)
-    GitHub: https://github.com/Glauedson
+    GitHub: https://github.com/fqrqh
 -->
 
 <!-- Banner  -->
 <a href="https://github.com/fqrqh">
-  <img src="assets/images/faded-memories (1).gif" alt="Banner"  style="width:100%; height:auto"/>
+  <img src="assets/images/faded-memories (1).gif" alt="Banner" style="width:100%; height:auto"/>
 </a>
 
 <div align="center">
@@ -18,20 +18,23 @@
     <img width="120px" 
         alt="Stars" 
         title="Stars Profile" 
-        src="https://custom-icon-badges.herokuapp.com/badge/dynamic/json?logo=star&color=000000&labelColor=FF1001&logoColor=ffffff&label=Stars&style=for-the-badge&query=%24.stars&url=https://api.github-star-counter.workers.dev/user/Glauedson" /> 
+        src="https://custom-icon-badges.herokuapp.com/badge/dynamic/json?logo=star&color=000000&labelColor=FF1001&logoColor=ffffff&label=Stars&style=for-the-badge&query=%24.stars&url=https://api.github-star-counter.workers.dev/user/fqrqh" /> 
   </a>
+
   <a href="https://api.github-star-counter.workers.dev/user/fqrqh">
     <img width="111px" 
         alt="forks" 
         title="Forks Repository" 
-        src="https://custom-icon-badges.demolab.com/github/forks/fqrqh/Glauedson?color=000000&logo=fork&style=for-the-badge&logoColor=white&labelColor=FF1001" /> 
+        src="https://custom-icon-badges.demolab.com/github/forks/fqrqh/fqrqh?color=000000&logo=fork&style=for-the-badge&logoColor=white&labelColor=FF1001" /> 
   </a>
+
   <a href="https://github.com/fqrqh?tab=followers">
     <img width="150px" 
         alt="Followers" 
         title="Github Followers" 
-        src="https://custom-icon-badges.herokuapp.com/github/followers/Glauedson?color=000000&labelColor=FF1001&style=for-the-badge&logo=person-add&label=Followers&logoColor=ffffff" />
+        src="https://custom-icon-badges.herokuapp.com/github/followers/fqrqh?color=000000&labelColor=FF1001&style=for-the-badge&logo=person-add&label=Followers&logoColor=ffffff" />
   </a>
+
 </div>
 
 </br>
@@ -41,6 +44,7 @@
 <div align="center">
 
 **Who Am I?**
+
 </div>
 
 <div align="justify">
@@ -61,22 +65,21 @@ At the moment, I am working as a **freelancer**, developing **complete systems**
   <strong>You can Click here</strong>
   </br>
 
-  <!-- Pinterest -->
-  <a href="https://br.pinterest.com/Glauedson_/" target="_blank">
+  <a href="https://br.pinterest.com/fqrqh/" target="_blank">
     <img width="130px" 
           src="https://img.shields.io/badge/Pinterest-FF0000?style=for-the-badge&logo=Pinterest&logoColor=white" 
           alt="Pinterest"
           title="My Pinterest"/>
   </a>
-  <!-- Linkedin -->
-  <a href="https://www.linkedin.com/in/glauedson-carlos-89875b258/" target="_blank">
+
+  <a href="https://www.linkedin.com/in/fqrqh/" target="_blank">
     <img width="100px" 
           src="https://img.shields.io/badge/Linkedin-FF0000?style=for-the-badge&logo=linkedin&logoColor=white" 
           alt="Linkedin"
           title="My Linkedin"/>
   </a>
-  <!-- GMail  -->
-  <a href="https://mail.google.com/mail/?view=cm&to=glauedson.dev@gmail.com" target="_blank">
+
+  <a href="https://mail.google.com/mail/?view=cm&to=fqrqh@gmail.com" target="_blank">
     <img width="97px" 
           src="https://img.shields.io/badge/Gmail-FF0000?style=for-the-badge&logo=gmail&logoColor=white" 
           alt="E-mail"
@@ -84,8 +87,8 @@ At the moment, I am working as a **freelancer**, developing **complete systems**
   </a>
 
 </div>
-</br>
 
+</br>
 
 <img src="./assets/icons/knife.png" width=106px align="right">
 
@@ -104,12 +107,10 @@ At the moment, I am working as a **freelancer**, developing **complete systems**
 </br>
 </div>
 
- [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=fqrqh&custom_title=My%20Contributions&hide_border=false&theme=high-contrast&border_color=FF1001&bg_color=transparent&radius=16&area_color=FF1001&area=true&point=ffffff&line=FF1001&days=10&text_color=ffffff&title_color=ffffff&include_all_commits=true&count_private=true)](https://github.com/fqrqh/github-readme-activity-graph)
-
+[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=fqrqh&custom_title=My%20Contributions&hide_border=false&theme=high-contrast&border_color=FF1001&bg_color=transparent&radius=16&area_color=FF1001&area=true&point=ffffff&line=FF1001&days=10&text_color=ffffff&title_color=ffffff&include_all_commits=true&count_private=true)](https://github.com/fqrqh/github-readme-activity-graph)
 
 <table align="center">
   <tr>
-    <!-- Skills Left -->
     <td valign="top" width="45%">
       <img src="./assets/images/Stack.svg">
       </br>
@@ -119,20 +120,12 @@ At the moment, I am working as a **freelancer**, developing **complete systems**
       <img src="https://skillicons.dev/icons?i=mysql,postgres,vite,spring,postman,git" /><br>
       <img src="https://skillicons.dev/icons?i=supabase,github,figma,vercel,androidstudio,arduino" /><br>
     </td>
-    <!---->
+
     <td valign="top" width="55%">
       <img src="https://github-readme-stats-rushis-projects-a131b45c.vercel.app/api/pin/?username=fqrqh&repo=lembra-plus-note-app&theme=dark&bg_color=FF1001&title_color=e0fbfc&text_color=000000&hide_border=true&description_lines_count=7&icon_color=ffffff&cache_seconds=86400" />
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=fqrqh&theme=dark&background=0D0D0D&ring=FF0000&fire=FF0000&currStreakNum=FFFFFF&card_width=401&sideNums=FFFFFF&currStreakLabel=FF0000&sideLabels=FF0000&dates=FFFFFF)](https://git.io/streak-stats)
+
     </td>
   </tr>
 </table>
-
-
-
-
-
-<!--
-<img src="https://steamcdn-a.akamaihd.net/steam/apps/1382330/extras/2-citynightmare.gif?t=1608034435">
-
--->
