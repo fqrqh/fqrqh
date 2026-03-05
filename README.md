@@ -66,7 +66,7 @@ At the moment, I am working as a **freelancer**, developing **complete systems**
 I've been manipulating `luau` since 2023 now , making project and improving my code skills here a lil sneakpeek so you can imagine my level in lua '' to see my other portfolio you can come on `Twitter` "Fqrqhhh" or `Discord` "fqrqhhh"
 
 <details>
-  <summary>🔹 Clique pour voir le code Roblox</summary>
+  <summary>💻 Click me to see the code!!</summary>
 
 ```lua
 local uis = game:GetService("UserInputService")
@@ -141,7 +141,7 @@ end
 </div>
 
 </br>
-</br>z
+</br>
 
 <!-- badges -->
 <div align="center">
