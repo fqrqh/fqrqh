@@ -9,7 +9,7 @@
 
 <!-- Banner  -->
 <a href="https://github.com/fqrqh">
-  <img src="f" alt="Banner" style="width:100%; height:auto"/>
+  <img src="https://raw.githubusercontent.com/fqrqh/fqrqh/refs/heads/main/d5aae1396caca37c2db61280a4244431.jpg" alt="Banner" style="width:100%; height:auto"/>
 </a>
 
 <div align="center">
