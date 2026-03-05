@@ -54,7 +54,86 @@ I am a Student currently in a **CyberSecurity** HighSchool located in `France`, 
 Over time, I have developed **solid experience** across the **Game Development**, with a strong passion for `Indie Games And Coding`, where **logic meets creativity and visual design**. Alongside web technologies, I have expanded my skills into some **Languages**, focusing on coding modern system for games using `Unreal Engine "BLUEPRINTS", Unity "C#"` and `Roblox Studio`, I commonly use a rich text editor such as `Visual Studio Code` > [!WARNING]
 > `You can check out my portfolio on my discord!!!`
 
-At the moment, I am working as a **freelancer**, developing **complete systems** for a video game im working on, from **planning and coding interface design** to **implementation and delivery**. This hands-on experience has strengthened my **problem-solving skills**, while constantly pushing me to grow as a **developer and professional**.   
+At the moment, I am working as a **freelancer**, developing **complete systems** for a video game im working on, from **planning and coding interface design** to **implementation and delivery**. This hands-on experience has strengthened my **problem-solving skills**, while constantly pushing me to grow as a **developer and professional**.  
+
+
+**My Skills**
+
+</div>
+
+<div align="justify">
+
+I've been manipulating `luau` since 2023 now , making project and improving my code skills here a code i made yesterday 
+
+```lua
+local uis = game:GetService("UserInputService")
+local Players = game:GetService("Players")
+local Player = Players.LocalPlayer
+local PlayerGui = Player:WaitForChild("PlayerGui")
+local ScreenGui = PlayerGui:WaitForChild("ScreenGui")
+local TextLabel = ScreenGui:WaitForChild("TextLabel")
+local character = Player.Character or Player.CharacterAdded:Wait()
+local hrp = character:WaitForChild("HumanoidRootPart")
+local tw = game:GetService("TweenService")
+local v = Vector3.new(6.062, 5.198, 5.907)
+local rs = game:GetService("RunService")
+local Debris = game:GetService("Debris")
+
+local TweenInfo = TweenInfo.new(0.10,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut)
+
+local transparency1 = {
+    Transparency = 0.5
+}
+
+local transparency2 = {
+    Transparency = 1
+}
+
+local p = Instance.new("Part")
+p.Anchored = false
+p.CanCollide = false
+p.CanQuery = false
+p.CanTouch = false
+p.Massless = true
+
+p.Size = v
+p.Transparency = 1
+p.Parent = character
+
+local weld = Instance.new("Weld")  
+weld.Part0 = p                 
+weld.Part1 = hrp             
+weld.C0 = CFrame.new(0, -2, 5)      
+weld.C1 = CFrame.new(0, 0, 0)      
+weld.Parent = p 
+
+local t = tw:Create(p,TweenInfo,transparency1)
+local t1 = tw:Create(p,TweenInfo,transparency2)
+
+local function partadded()
+    t:Play()
+    wait(0.3)
+    t1:Play()
+end
+
+local cf = hrp.CFrame
+local parts = workspace:GetPartBoundsInBox(cf, v)
+local hitcharacters = {}
+
+for i, part in pairs(parts) do
+    uis.InputBegan:Connect(function(Input,gp)
+        if gp then return end
+        if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+            partadded()
+            if hitcharacters:FindFirstChildOfClass("Humanoid") and not table.find(hitcharacters,part.Parent) then
+                hitcharacters:FindFirstChildOfClass("Humanoid"):TakeDamage(0.1)
+            end
+        end
+    end)
+    wait(0.1)
+    print(parts) 
+end
+```
 
 </div>
 
