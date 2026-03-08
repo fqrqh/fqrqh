@@ -69,59 +69,39 @@ I've been manipulating `luau` since 2023 now , making project and improving my c
   <summary>💻 Click me to see the code!!</summary>
 
 ```lua
-local uis = game:GetService("UserInputService")
-local Players = game:GetService("Players")
-local Player = Players.LocalPlayer
-local PlayerGui = Player:WaitForChild("PlayerGui")
-local ScreenGui = PlayerGui:WaitForChild("ScreenGui")
-local TextLabel = ScreenGui:WaitForChild("TextLabel")
-local character = Player.Character or Player.CharacterAdded:Wait()
-local hrp = character:WaitForChild("HumanoidRootPart")
-local tw = game:GetService("TweenService")
-local v = Vector3.new(6.062, 5.198, 5.907)
-local rs = game:GetService("RunService")
-local Debris = game:GetService("Debris")
 
-local TweenInfo = TweenInfo.new(0.10,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut)
+	local function dmg()
+		local run = true
+		local cf = part.CFrame
+		local partsInBox = workspace:GetPartBoundsInBox(cf, v)
 
-local transparency1 = {
-    Transparency = 0.5
-}
+		for _, p in ipairs(partsInBox) do
+			local model = p:FindFirstAncestorWhichIsA("Model")
+			local npchrp = model:WaitForChild("HumanoidRootPart")
+			if model then
+				local humanoid = model:FindFirstChild("Humanoid") 
+				if humanoid and model ~= player.Character then
 
-local transparency2 = {
-    Transparency = 1
-}
+					npchrp = part.CFrame
+					
+					
+					
+					
 
-local p = Instance.new("Part")
-p.Anchored = false
-p.CanCollide = false
-p.CanQuery = false
-p.CanTouch = false
-p.Massless = true
 
-p.Size = v
-p.Transparency = 1
-p.Parent = character
+				else
 
-local weld = Instance.new("Weld")  
-weld.Part0 = p                 
-weld.Part1 = hrp             
-weld.C0 = CFrame.new(0, -2, 5)      
-weld.C1 = CFrame.new(0, 0, 0)      
-weld.Parent = p 
+				end
+			end
 
-local t = tw:Create(p,TweenInfo,transparency1)
-local t1 = tw:Create(p,TweenInfo,transparency2)
+		end
+	end
 
-local function partadded()
-    t:Play()
-    wait(0.3)
-    t1:Play()
-end
+	dmg()
 
-local cf = hrp.CFrame
-local parts = workspace:GetPartBoundsInBox(cf, v)
-local hitcharacters = {}
+	debris:AddItem(part, 0.3)
+	debris:AddItem(weld, 0.3)
+end)
 
 for i, part in pairs(parts) do
     uis.InputBegan:Connect(function(Input,gp)
