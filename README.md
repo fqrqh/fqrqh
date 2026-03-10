@@ -9,7 +9,7 @@
 
 <!-- Banner  -->
 <a href="https://github.com/fqrqh">
-  <img src="https://raw.githubusercontent.com/fqrqh/fqrqh/refs/heads/main/d5aae1396caca37c2db61280a4244431.jpg" alt="Banner" style="width:100%; height:auto"/>
+  <img src="" alt="Banner" style="width:100%; height:auto"/>
 </a>
 
 <div align="center">
@@ -63,62 +63,7 @@ At the moment, I am working as a **freelancer**, developing **complete systems**
 
 <div align="justify">
 
-I've been manipulating `luau` since 2023 now , making project and improving my code skills here a lil sneakpeek so you can imagine my level in lua '' to see my other portfolio you can come on `Twitter` "Fqrqhhh" or `Discord` "fqrqhhh"
 
-<details>
-  <summary>💻 Click me to see the code!!</summary>
-
-```lua
-
-	local function dmg()
-		local run = true
-		local cf = part.CFrame
-		local partsInBox = workspace:GetPartBoundsInBox(cf, v)
-
-		for _, p in ipairs(partsInBox) do
-			local model = p:FindFirstAncestorWhichIsA("Model")
-			local npchrp = model:WaitForChild("HumanoidRootPart")
-			if model then
-				local humanoid = model:FindFirstChild("Humanoid") 
-				if humanoid and model ~= player.Character then
-
-					npchrp = part.CFrame
-					
-					
-					
-					
-
-
-				else
-
-				end
-			end
-
-		end
-	end
-
-	dmg()
-
-	debris:AddItem(part, 0.3)
-	debris:AddItem(weld, 0.3)
-end)
-
-for i, part in pairs(parts) do
-    uis.InputBegan:Connect(function(Input,gp)
-        if gp then return end
-        if Input.UserInputType == Enum.UserInputType.MouseButton1 then
-            partadded()
-            if hitcharacters:FindFirstChildOfClass("Humanoid") and not table.find(hitcharacters,part.Parent) then
-                hitcharacters:FindFirstChildOfClass("Humanoid"):TakeDamage(0.1)
-            end
-        end
-    end)
-    wait(0.1)
-    print(parts) 
-end
-```
-
-</div>
 
 </br>
 </br>
