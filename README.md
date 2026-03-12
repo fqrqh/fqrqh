@@ -29,7 +29,7 @@
 
 <p>
 <a href="soon"><img src="https://img.shields.io/badge/Portfolio-soon-171717?style=flat&logo=&logoColor=white" alt="Portfolio" /></a> <br/>
-<a href="https://atomixui.mihircodes.in/"><img src="https://img.shields.io/badge/Atomix_UI-High--performance_React_components-171717?style=flat" alt="Atomix UI" /></a> <br/>
+<a href="https://atomixui.mihircodes.in/"><img src="https://img.shields.io/badge/AnimUI-High--performance_Animation--Lib-171717?style=flat" alt="Atomix UI" /></a> <br/>
 <a href="https://cozzy-corner.vercel.app/"><img src="https://img.shields.io/badge/Cozzy_Corner-Study_Together-171717?style=flat" alt="Cozzy Corner" /></a> <br/>
 <a href="#"><img src="https://img.shields.io/badge/Content_Pilot-Coming_Soon-171717?style=flat" alt="Content Pilow (coming soon)" /></a> <br/>
 <a href="https://analytics-code.vercel.app"><img src="https://img.shields.io/badge/Analytics_Code-Real--time_data_tracking-171717?style=flat" alt="Analytics Code" /></a> <br/>
