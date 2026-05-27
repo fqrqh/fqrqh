@@ -14,13 +14,15 @@
               ░░░░░               ░░░░░            
 </pre>
 
-</div>
-<h4 align="center">I’m Mithun Srinivasan!!<br>CSE undergrad<br>Passionate about coding, tech & problem-solving.</h4>
-<picture>
-  <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.webp" type="image/webp">
-  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.gif" alt="👋" width="32" height="32">
-</picture>
+<h4>
+  I’m Mithun Srinivasan!! 
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.gif" width="28" height="28" alt="wave" />
+  <br>
+  CSE undergrad<br>
+  Passionate about coding, tech & problem-solving.
+</h4>
 
+</div>
 <h4 align="center">I’m Mithun Srinivasan!!<br>CSE undergrad<br>Passionate about coding, tech & problem-solving.</h4>
 
 <h2 align="left">About me!</h2>
