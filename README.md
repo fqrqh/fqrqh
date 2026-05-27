@@ -17,6 +17,7 @@
 </div>
 
 <h1 align="center">Hello! 👋<br> I'm fqrqh ☺️</h1>
+<img src="https://iam-weijie.github.io/wave/hand-emoji.svg" alt="Animated Emoji" width="50" height="50">
 
 <h4 align="center">I’m Mithun Srinivasan!!<br>CSE undergrad<br>Passionate about coding, tech & problem-solving.</h4>
 
