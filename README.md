@@ -31,7 +31,7 @@
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=cpp" height="40" alt="cplusplus logo" />
   <img width="12" />
- <img src="https://skillicons.dev/icons?i=lua" height="40" alt="cplusplus logo" />
+ <img src="https://skillicons.dev/icons?i=lua" height="40" alt="lua logo" />
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=matlab" height="40" alt="matlab logo" />
   <img width="12" />
