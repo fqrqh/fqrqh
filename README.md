@@ -33,7 +33,9 @@
   <img width="12" />
  <img src="https://skillicons.dev/icons?i=lua" height="40" alt="lua logo" />
   <img width="12" />
-  <img src="https://skillicons.dev/icons?i=matlab" height="40" alt="matlab logo" />
+  <img src="https://skillicons.dev/icons?i=html" height="40" alt="html logo" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=css" height="40" alt="css logo" />
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=java" height="40" alt="java logo" />
 </div>
