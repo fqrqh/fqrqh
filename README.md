@@ -56,4 +56,4 @@
 
 <hr style="height:1px;border:none;border-top:1px solid #444;"/>
 
-[![Mithun's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=fqrqh&bg_color=000000&color=ffffff&line=26a641&point=ffffff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![fqrqh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=fqrqh&bg_color=000000&color=ffffff&line=26a641&point=ffffff&area=true&hide_border=true)](https://github.com/fqrqh/github-readme-activity-graph)
