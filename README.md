@@ -3,3 +3,4 @@
 - Check out my **[portfolio](soon)**  // SOON
 - Connect with me: **[Discord](fqrqhhh)**  "fqrqhhh"
 
+CONTRIB
