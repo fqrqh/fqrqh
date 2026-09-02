@@ -1,45 +1,794 @@
-<!--Hey! This is the original version
-of Simple CSS Waves-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTMLwave</title>
 
-<div class="header">
 
-<!--Content before waves-->
-<div class="inner-header flex">
-<!--Just the logo.. Don't mind this-->
-<svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
-<path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
-<g><path fill="#fff"
-d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
-C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
-c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
-</g>
-</svg>
-<h1>Simple CSS Waves</h1>
-</div>
+        <style>
+            /* Global color palette definition. */
+            :root {
+                --light-blue:  #E9F1FA;
+                --bright-blue: #00ABE4;
+                --dark-blue:   #000080;
+                --white:       #FFFFFF;
+                --black:       #000000;
 
-<!--Waves Container-->
-<div>
-<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-<defs>
-<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-</defs>
-<g class="parallax">
-<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-</g>
-</svg>
-</div>
-<!--Waves end-->
+                --rule:   var(--dark-blue);
 
-</div>
-<!--Header ends-->
+                --fil-bk: var(--light-blue);
+                --fil-ft: var(--black);
 
-<!--Content starts-->
-<div class="content flex">
-  <p>By.Goodkatz | Free to use </p>
-</div>
-<!--Content ends-->
+                --stt-bk: yellow;
+                --stt-ft: black;
+
+                --ttl-bk: var(--bright-blue);
+                --ttl-ft: var(--black);
+
+                --ctr-bk: var(--light-blue);
+                --ctr-ft: var(--black);
+
+                --sel-bk: var(--light-blue);
+                --sel-ft: var(--black);
+                --sel-ov: var(--bright-blue);
+
+                --val-bk: var(--white);
+                --val-ft: var(--black);
+                --val-ov: var(--bright-blue);
+            }
+
+            /* Style for the horizontal rules. */
+            hr {
+                height: 2px;
+                background-color: var(--rule);
+                border: none;
+            }
+
+
+            /* Style for the file reader. */
+            .file {
+                background-color: var(--fil-bk);
+                color:            var(--fil-ft);
+
+                font-family:      Arial;
+            }
+
+            /* Styles for the status. */
+            .status-clear {
+                font-family: Arial;
+
+                height:      22px;
+            }
+            .status-warning {
+                background-color: var(--stt-bk);
+                color:            var(--stt-ft);
+                border-color:     var(--stt-ft);
+
+                font-family: Arial;
+
+                outline: solid 1px;
+
+                height:      22px;
+            }
+
+            /* Style for the titles. */
+            .title {
+                background-color: var(--ttl-bk);
+                color:            var(--ttl-ft);
+                border-color:     var(--rule);
+
+                font-family:      Arial;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                outline: solid 1px;
+
+                float:       top;
+                height:      28px;
+                line-height: 28px;
+                text-align:  center;
+            }
+
+            /* Style for the control pane. */
+            .control {
+                background-color: var(--ctr-bk);
+                color:            var(--ctr-ft);
+                border-color:     var(--rule);
+
+                font-family:      Arial;
+
+
+                outline: solid 1px; 
+
+                float:       top;
+                height:      28px;
+                line-height: 28px;
+                text-align:  center;
+            }
+
+            /* Style for vertical space div. */
+            .vspace {
+                /* No specified color since used in several kinds of panes. */
+            }
+
+            /* Style for the signals values. */
+            .value {
+                background-color: var(--val-bk);
+                color:            var(--val-ft);
+
+                outline: solid 2px var(--dark-blue);
+                margin-top: 2px;
+            }
+
+            /* Style for the signal selection. */
+            .select {
+                background-color: var(--sel-bk);
+                color:            var(--sel-ft);
+
+                outline: solid 2px var(--dark-blue);
+                margin-top: 2px;
+            }
+
+            /* Remove default bullets */
+            ul, #sigsel {
+               list-style-type: none;
+                padding-left: 18px;
+            }
+            /* Remove margins and padding from the parent ul */
+            #sigsel {
+                margin: 0;
+                padding: 0;
+            }
+            /* Style the caret/arrow */
+            .caret {
+                cursor: pointer;
+                user-select: none; /* Prevent text selection */
+            }
+            /* Create the caret/arrow with a unicode, and style it */
+            .caret::before {
+                content: "\25B6";
+                color: black;
+                display: inline-block;
+                margin-right: 6px;
+            }
+            /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+            .caret-down::before {
+                transform: rotate(90deg);
+            }
+            /* Hide the nested list */
+            .nested {
+                display: none;
+            }
+            /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+            .active {
+                display: block;
+            }
+        </style>
+
+
+    </head>
+    <body>
+
+        <div id="file" style="display:flex; float:top;">
+            <input type="file" accept=".vcd, .VCD" id="fileSelect" 
+                   class="file" style="float:left" onchange="readFile(this)" />
+            <button id="reloadButton"
+                style="float:left; margin-left:-5px;">&#8635;</button>
+            <div id="status" class="status-clear"
+                style="flex-grow:1; margin-left:6px"></div>
+            <a style="float:right; margin-right:6px; margin-left:6px"
+                href="LICENSE.txt">License</a>
+            <button id="help" style="float:right; margin-right:2%"
+                    onclick="window.open('README.txt')">Help</button>
+        </div>
+
+        <hr/>
+
+
+
+        <div id="window">
+
+            <div style="float:left; width:10%;">
+                <div id="selectPane" 
+                    style ="float:top; height:91vh; font-family:Arial;" 
+                    ondrop="dropDelSignal(event)" ondragover="allowDrop(event)">
+                    <div class="title">
+                        Signal selection
+                    </div>
+                    <div id="selectScroll" class="select"
+                        style="height:95%; overflow-x:scroll; overflow-y:scroll;">
+                        <div class="vspace" style="height:5px;"></div>
+                        <ul id="sigsel">
+                            <div style="text-align:center;margin:14px;">No signal</div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div style="float:left; width:10%;">
+                <div id="valuePane" 
+                    style="float:top; height:91vh; font-family:Arial;"
+                    ondrop="dropAddSignal(event)" ondragover="allowDrop(event)">
+                    <div class="title">
+                        Signal value
+                    </div>
+                    <div id="valueScroll" class="value"
+                        style="height:95%; overflow-x:scroll;"
+                        onscroll="scrollViewer(event)">
+                        <div class="vspace" style="height:4px;"></div>
+                        <ul id="sigval"
+                            style="font-family:Courier New; padding:0px; text-indent:1em;">
+                            No signal
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="controlPane" style="float:left; height:94vh; width:79%;">
+                <div style="float:top; height:4%;">
+                    <div class="title" style="float:left; width:10%;">
+                        Wave view
+                    </div>
+                    <div class="control">
+                        <div >
+                            <div id="zoom" 
+                                style="float:left; padding-left:10px; padding-right:10px;">
+                                zoom:
+                            </div>
+                            <input type="range" min="1" max="99" value="50" class="zoomSlider" id="zoomSlider" style="float:left; margin-top:4px;">
+                            <button class="zoomButton" id="zoomDownButton" style="float:left; margin-top:2px;">-</button>
+                            <button class="zoomButton" id="zoomUpButton" style="float:left; margin-top:2px;">+</button>
+                        </div>
+                        <button id="centerButton"
+                                style="float:right; margin-top:2px; margin-right:2px;">center</button>
+                        <div id="ruler" style="float:right; margin-right:6px">
+                            ruler:
+                        </div>
+                    </div>
+                </div>
+                <div id="viewerPane" 
+                    style="height:92%; width:100%; overflow-y:scroll; overflow-x:hidden; outline: black solid 1px;"
+                    onscroll="scrollValue(event)" >
+                    <canvas id="viewer" style="background-color:#000000; object-fit:contain;">
+                    </canvas>
+                </div>
+                <div id="posPane" style="height:4%; width:100%;display:flex;">
+                    <button class="posButton" id="posDownButton" style="float:left;">&#9664;</button>
+                    <input type="range" min="0" max="1000" value="0" class="posSlider" id="posSlider" style="float:left; display:flex; flex-grow:1; vertical-align:middle;">
+                    <button class="posButton" id="posUpButton" style="float:left;">&#9654;</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <script>
+
+            // Handle the reload of file.
+            const reloadButton   = document.getElementById("reloadButton");
+            const inputFile      = document.getElementById("fileSelect");
+
+            // From the down button.
+            reloadButton.onclick = function() {
+                // Reread the file.
+                readFile(inputFile);
+            }
+
+
+
+            // Handles the hierarchical display of the signal selector.
+            // Code opbtained from the W3C recommendations: How TO - Tree View
+            function runSelectSignal() {
+                let toggler = document.getElementsByClassName("caret");
+                for (let i = 0; i < toggler.length; i++) {
+                    toggler[i].addEventListener("click", function() {
+                        this.parentElement.querySelector(".nested").classList.toggle("active");
+                        this.classList.toggle("caret-down");
+                    });
+                }
+            }
+
+            // Display the selected signals.
+            function showSelected() {
+                let sigvals = undefined;
+                if (selectedSignals.length > 0) {
+                    // There are some signals to show.
+                    sigvals = '';
+                    let first = true;
+                    for(let sig of selectedSignals) {
+                        sigvals += '<li id="' + sig.id + '"' +
+                            ' style="border-bottom:1px solid Gray; ';
+                        if(first) {
+                            sigvals += 'border-top: 1px solid Gray; ';
+                            first = false;
+                        }
+                        sigvals +=
+                            ' line-height:' + (viewer.heightS-1) + 'px;" ' +
+                            ' draggable="true" ondragstart="dragSignal(event)" onmouseover="showDragVal(event)" onmouseout="unShowDragVal(event)" onclick="modeSignal(event)">' +
+                            sig.name + '=' + viewer.value(sig) +
+                            '</li>'
+                    }
+                }
+                else {
+                    // There are no signals yet.
+                    sigvals = 'No signal.';
+                }
+                document.getElementById('sigval').innerHTML = sigvals;
+            }
+
+
+            
+
+            // Handles the display of the selected signals.
+            // The id->signal map.
+            const id2signal = new Map();
+
+            // The list of selected signals.
+            const selectedSignals = [];
+
+            // The scroll showing the selected signals.
+            const valueScroll = document.getElementById('valueScroll');
+
+            // Refresh the signal selection variables for the full wave or a
+            // signal
+            function refreshSelectSignal(wavesig) {
+                if (wavesig instanceof Wave) {
+                    // Wave case.
+                    // Clears the tables.
+                    id2signal.clear();
+                    selectedSignals.splice(0,selectedSignals.length);
+                    // Refill the id map.
+
+                    for(let sig of wavesig.signals) {
+                        // Recruse.
+                        refreshSelectSignal(sig);
+                    }
+                    // Display the selection in the current state.
+                    showSelected();
+                }
+                else {
+                    // Signal case.
+                    if (wavesig.subs.length > 0) {
+                        // There are sub signals, recurse.
+                        for(let sub of wavesig.subs) {
+                            refreshSelectSignal(sub);
+                        }
+                    }
+                    else {
+                        // This a leaf signal that can be selected.
+                        id2signal.set(wavesig.id,wavesig);
+                    }
+                }
+
+            }
+
+
+            // Handles add and remove of signal from the selector to the viewer.
+            // Can be done through drag and drop or double click.
+
+            // Add a signal.
+            function addSignal(sig) {
+                // If the signal already present, skip it.
+                if (selectedSignals.includes(sig)) { return; }
+                // Add the signal.
+                selectedSignals.push(sig);
+                viewer.add(sig);
+                // Display the selection in the current state.
+                showSelected();
+                // Adjust the size of the viewer.
+                valueSize = document.getElementById('sigval').getBoundingClientRect().height;
+                if (valueSize+42 > viewer.height) {
+                    setViewerSize(0,valueSize+42 - viewerPane.getBoundingClientRect().height);
+                }
+                // Display the viewer.
+                showViewer();
+            }
+
+            // Delete a signal.
+            function delSignal(sig) {
+                let idx = selectedSignals.indexOf(sig);
+                if (idx > -1) { selectedSignals.splice(idx,1); }
+                viewer.del(sig);
+                // Display the selection in the current state.
+                showSelected();
+                // Display the viewer.
+                showViewer();
+            }
+
+            // The interface for adding signals.
+
+            function allowDrop(ev) {
+                ev.preventDefault();
+            }
+
+            function showDragSel(ev) {
+                ev.target.style.backgroundColor = 
+                    getComputedStyle(ev.target).getPropertyValue("--sel-ov");
+            }
+
+            function unShowDragSel(ev) {
+                ev.target.style.backgroundColor = 
+                    getComputedStyle(ev.target).getPropertyValue("--sel-bk");
+            }
+
+            function showDragVal(ev) {
+                ev.target.style.backgroundColor =
+                    getComputedStyle(ev.target).getPropertyValue("--val-ov");
+            }
+
+            function unShowDragVal(ev) {
+                ev.target.style.backgroundColor =
+                    getComputedStyle(ev.target).getPropertyValue("--val-bk");
+            }
+
+            // Drag a signal.
+            function dragSignal(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+
+            // Drop for adding a signal.
+            function dropAddSignal(ev) {
+                ev.preventDefault();
+                let data = ev.dataTransfer.getData("text");
+                // ev.target.appendChild(document.getElementById(data));
+                let sig = id2signal.get(data);
+                if(!sig) { console.log("Invalid data: " + data); }
+                addSignal(sig);
+            }
+
+            // Add a signal on double click.
+            function dblAddSignal(ev) {
+                let sig = id2signal.get(ev.target.id);
+                if(!sig) { console.log("Invalid data: " + data); }
+                addSignal(sig);
+            }
+
+            // Drop for removing a signal.
+            function dropDelSignal(ev) {
+                ev.preventDefault();
+                let data = ev.dataTransfer.getData("text");
+                let sig = id2signal.get(data);
+                if(!sig) { console.log("Invalid data: " + data); }
+                delSignal(sig);
+            }
+
+            // Delete a signal on double click.
+            function dblDelSignal(ev) {
+                let sig = id2signal.get(ev.target.id);
+                if(!sig) { console.log("Invalid data: " + data); }
+                delSignal(sig);
+            }
+
+            // Scroll the signal values.
+            function scrollValue(ev) {
+                valueScroll.scrollTop = ev.target.scrollTop;
+            }
+
+
+            // Handle the display mode of signals (binary, decimal or hexa).
+
+            // Roll the display mode.
+            function modeSignal(ev) {
+                let sig = id2signal.get(ev.target.id);
+                if(!sig) { console.log("Invalid data: " + data); }
+                // Update the mode of the signal.
+                sig.mode = -1;
+                // Display the selection in the current state.
+                showSelected();
+                // Display the viewer.
+                showViewer();
+            }
+
+
+            // Handle the zoom.
+            let zoom = 50;
+            // let zoomStep = 1;
+            let zoomScale = 100.0;
+            let zoomSlider     = document.getElementById("zoomSlider");
+            let zoomUpButton   = document.getElementById("zoomUpButton");
+            let zoomDownButton = document.getElementById("zoomDownButton");
+
+            let zoomOutput = document.getElementById("zoom");
+
+            // // Refresh the zoom for a wave.
+            // function refreshZoom(wave) {
+            //     zoomStep = Math.max(0.1,1000 / wave.length);
+            // }
+
+            // Display the zoom (and scale) value.
+            function showZoom() { 
+                let zVal = zoom.toFixed(2);
+                if (zVal.length<5) {
+                    zoomOutput.innerHTML = "zoom: 0" + zoom.toFixed(4) +
+                        " (digit: " + Math.log10(zoomScale/100).toFixed(0) + ")";
+                }
+                else {
+                    zoomOutput.innerHTML = "zoom: " + zoom.toFixed(4) +
+                        " (digit: " + Math.log10(zoomScale/100).toFixed(0) + ")";
+                }
+            }
+
+            // Show the zoom a first time.
+            showZoom();
+
+            // Update the current slider value.
+            // From the slider.
+            zoomSlider.oninput = function() {
+                zoom = Math.trunc(zoom/zoomScale)*zoomScale + 
+                       parseFloat(this.value/100.0)*zoomScale;
+                showZoom();
+                showViewer();
+            }
+            // From the down button.
+            zoomDownButton.onclick = function() {
+                // if (zoom > 1) { zoom -= zoomStep; }
+                // if (zoom < 1) { zoom = 1; }
+                zoomScale /= 100;
+                // zoomSlider.value = zoom;
+                zoomSlider.value = zoom-Math.trunc(zoom/zoomScale)*zoomScale;
+                showZoom();
+                showViewer();
+            }
+            // From the up button.
+            zoomUpButton.onclick = function() {
+                // if (zoom < 99) { zoom += zoomStep; }
+                // if (zoom > 99) { zoom = 99; }
+                zoomScale *= 100;
+                if (zoomScale > 100.0) { zoomScale = 100.0; }
+                // zoomSlider.value = zoom;
+                zoomSlider.value = zoom-Math.trunc(zoom/zoomScale)*zoomScale;
+                showZoom();
+                showViewer();
+            }
+
+
+
+            // Handle the start position of the viewer.
+            let position = 0;
+            // let posStep  = 1;
+            let posSlider    = document.getElementById("posSlider");
+            let posUpButton  = document.getElementById("posUpButton");
+            let posDownButton = document.getElementById("posDownButton");
+
+            // // Refresh the position handling for a wave.
+            // function refreshPos(wave) {
+            //     posStep = 100 / wave.length;
+            // }
+
+            // Update the current slider value.
+            // From the slider.
+            posSlider.oninput = function() {
+                position = parseFloat(this.value);
+                showViewer();
+            }
+            // From the down button.
+            posDownButton.onclick = function() {
+                // if (position > 0) { position -= posStep; }
+                if (position > 0) { position -= zoomScale/100; }
+                if (position < 0) { position = 0; }
+                posSlider.value = position;
+                showViewer();
+            }
+            // From the up button.
+            posUpButton.onclick = function() {
+                // if (position < 1000) { position += posStep; }
+                if (position < 1000) { position += zoomScale/100; }
+                if (position > 1000) { position = 1000; }
+                posSlider.value = position;
+                showViewer();
+            }
+
+
+        </script>
+
+
+        <script src="./canvaswave.js"></script>
+
+        <script>
+            // Sets the viewer variables and style.
+            let viewer    = undefined;
+            const viewerPane = document.getElementById('viewerPane');
+            const canvas  = document.getElementById('viewer');
+            const context = canvas.getContext("2d");
+            const viewerRect = viewerPane.getBoundingClientRect();
+
+            // The color palette.
+            const palette = { back: 'black', text: 'white',
+                              signal: 'yellow', fill: 'red' };
+
+            // Set the size of the canvas to viewerPane + (dx,dy) pixels.
+            function setViewerSize(dx,dy) {
+                // console.log("dx=" + dx + " dy=" + dy);
+                // Get the DPR and size of the canvas
+                const dpr = window.devicePixelRatio;
+
+                // Set the "actual" size of the canvas
+                canvas.width = (viewerRect.width+dx) * dpr;
+                canvas.height = (viewerRect.height+dy) * dpr;
+
+                // Scale the context to ensure correct drawing operations
+                context.scale(dpr, dpr);
+
+                // Set the "drawn" size of the canvas
+                canvas.style.width = `${viewerRect.width+dx}px`;
+                canvas.style.height = `${viewerRect.height+dy}px`;
+            }
+
+            // First set the size without increase.
+            setViewerSize(0,0);
+
+
+            // Show the viewer if existing.
+            function showViewer() {
+                if (viewer) {
+                    viewer.zoom = zoom;
+                    viewer.position = position * (viewer.wave.length-viewer.widthT) / 1000;
+                    viewer.clear();
+                    viewer.draw();
+                }
+            }
+
+            // Build the viewer with a new wave.
+            function buildViewer(wave) {
+                viewer = new CanvasWave(canvas,palette,wave);
+                showViewer();
+            }
+
+            // Scroll the viewer.
+            function scrollViewer(ev) {
+                viewerPane.scrollTop = ev.target.scrollTop;
+            }
+
+
+            // Handle the clicks on the canvas.
+
+            // The ruler.
+            let rulerOutput = document.getElementById("ruler");
+            let rulerHolding = false; // Tell the ruler is holded.
+
+            // The center on ruler button.
+            let centerButton = document.getElementById("centerButton");
+
+            // Updating the ruler.
+            function updateRuler(ev) {
+                // Reposition the ruler.
+                const x = ev.clientX - viewerRect.left;
+                // const y = ev.clientY - viewerRect.top;
+                viewer.ruler = viewer.toT(x);
+                // Update the selected signals view.
+                showSelected();
+                // Display the viewer.
+                showViewer();
+                // Update the ruler viewer.
+                showRuler();
+            }
+
+            canvas.addEventListener('mousedown', function(ev) {
+                // The mouse start to be held.
+                rulerHolding = true;
+                // Update the ruler.
+                updateRuler(ev);
+            });
+
+            canvas.addEventListener('mouseup', function(ev) {
+                // The mouse in not held any longer.
+                rulerHolding = false;
+            });
+
+            canvas.addEventListener('mouseleave', function(ev) {
+                // The mouse maybe held, but out of the canvas.
+                rulerHolding = false;
+            });
+
+            canvas.addEventListener('mousemove', function(ev) {
+                if(rulerHolding == true) {
+                    // Update the ruler.
+                    updateRuler(ev);
+                }
+            });
+            
+
+            // Display the ruler time.
+            function showRuler() { 
+                rulerOutput.innerHTML = "ruler: " + Math.round(viewer.ruler) + ' ' + viewer.wave.unit; 
+            }
+
+            // Center on the ruler.
+            centerButton.onclick = function() {
+                position = (viewer.ruler - viewer.widthT/2) * 1000 / (viewer.wave.length-viewer.widthT)
+                if (position < 0) { position = 0; }
+                if (position > 1000) { position = 1000; }
+                posSlider.value = position;
+                showViewer();
+            }
+
+        </script>
+
+
+        <script src="./htmlwave.js"></script>
+
+        <script>
+            let str = ''
+            const reader = new FileReader();
+
+            // Displays a signal and its hierachy.
+            function showSignal(sig) {
+                let showsig = '<li style="white-space:nowrap;" id="' + sig.id + '"'; 
+                if (sig.subs.length > 0) {
+                    showsig += '><span class="caret">' + sig.name + '</span>\n';
+                    showsig += '<ul class="nested">\n';
+                    for(let sub of sig.subs) { showsig += showSignal(sub); }
+                    showsig += '</ul>\n';
+                }
+                else {
+                    // Leaf signals are to be draggable and double clickable.
+                    showsig += 'draggable="true" ondblclick="dblAddSignal(event)" ondragstart="dragSignal(event)" onmouseover="showDragSel(event)" onmouseout="unShowDragSel(event)">' + sig.name;
+                }
+                showsig += '</li>\n'
+                return showsig;
+            }
+
+            // Displays a signal selector from a wave.
+            function selectSignal(wave) {
+                let selsigs = '';
+                for(sig of wave.signals) { selsigs += showSignal(sig); }
+                selsigs += "<hr/><br/>"
+                return selsigs;
+            }
+
+            // Read a wave and update the wave viewer accordingly.
+            function readWave(str) {
+                const wave = read_vcd(str);
+                const status = document.getElementById('status');
+                if (wave instanceof Wave) {
+                    document.getElementById('sigsel').innerHTML = 
+                        selectSignal(wave);
+                    // Update the signal selector if new file.
+                    refreshSelectSignal(wave);
+                    runSelectSignal();
+                    // Update the zoom.
+                    // refreshZoom(wave);
+                    showZoom();
+                    // Build the viewer.
+                    buildViewer(wave);
+                    // Update the ruler viewer.
+                    showRuler();
+                    // Indicate the status is OK (i.e., clears the status).
+                    status.innerHTML='';
+                    status.classList.remove('status-warning');
+                    status.classList.add('status-clear');
+                }
+                else {
+                    // The file could not be load, show it in the status.
+                    status.innerHTML='&nbsp;&#9888; Invalid file!';
+                    status.classList.remove('status-clear');
+                    status.classList.add('status-warning');
+                }
+            }
+
+            // Read a file.
+            function readFile(input) {
+                const file = input.files[0];
+
+                reader.readAsText(file);
+
+                reader.onload = function () {
+                    readWave(reader.result);
+                }
+                reader.onerror = function () {
+                    console.log(reader.error);
+                };
+            }
+
+            // First load.
+            readFile(document.getElementById('fileSelect'))
+
+            //const wave = read_vcd(str);
+
+
+        </script>
+
+
+    </body>
+</html>
