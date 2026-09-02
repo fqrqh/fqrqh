@@ -5,7 +5,7 @@
 <br/>
 
 <div align="center">
-  <sub><b>· &nbsp; T O O L K I T &nbsp; ·</b></sub>
+  <sub><b>Languages i knows</b></sub>
 
   <br/><br/>
 <a href="https://skillicons.dev">
